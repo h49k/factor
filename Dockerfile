@@ -19,7 +19,7 @@ RUN set -ex; \
 		rm -rf /var/lib/apt/lists/*; \
 	fi
 
-ENV PATH $PATH:/usr/local/factor
+ENV PATH /usr/local/factor:$PATH
 
 RUN set -eux \
     && curl -OL https://downloads.factorcode.org/linux-x86-64/${PACKAGE} \
